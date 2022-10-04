@@ -683,7 +683,7 @@ RectTransform:
   m_Children:
   - {fileID: 510364481}
   m_Father: {fileID: 1878016680}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 419009351}
   - component: {fileID: 419009350}
   m_Layer: 5
-  m_Name: Player2Hp
+  m_Name: Player1Hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -938,11 +938,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1878016680}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 512, y: 271}
+  m_AnchoredPosition: {x: -529, y: 242}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &419009350
@@ -1075,7 +1075,7 @@ RectTransform:
   m_Children:
   - {fileID: 1293240310}
   m_Father: {fileID: 1878016680}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1854,7 +1854,7 @@ GameObject:
   - component: {fileID: 1227205331}
   - component: {fileID: 1227205330}
   m_Layer: 5
-  m_Name: Player1Hp
+  m_Name: Player2Hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1873,11 +1873,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1878016680}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -509, y: 273}
+  m_AnchoredPosition: {x: 493.83, y: 271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1227205330
@@ -2280,7 +2280,7 @@ RectTransform:
   m_Children:
   - {fileID: 286391660}
   m_Father: {fileID: 1878016680}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2528,7 +2528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 492, y: 153}
+  m_AnchoredPosition: {x: 492.00003, y: 153.00002}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728972575
@@ -2560,9 +2560,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 0a6264704483a544284441327b443f07, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: f42e77c14013a7c4c9d972b30c61d19f, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 76ee45a1c7107e042be241e90ffdb998, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -2577,7 +2577,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2125262855}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: P1LowPunch
+        m_MethodName: P2LowPunch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2607,8 +2607,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2658,7 +2658,7 @@ RectTransform:
   m_Children:
   - {fileID: 575931790}
   m_Father: {fileID: 1878016680}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2708,7 +2708,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1764924683}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P1LowPunch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1764924683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2974,13 +2986,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 419009349}
   - {fileID: 1227205329}
   - {fileID: 1764924681}
   - {fileID: 330420644}
   - {fileID: 2032550271}
   - {fileID: 430083745}
   - {fileID: 1513391426}
-  - {fileID: 419009349}
   - {fileID: 1728972574}
   - {fileID: 234941501}
   - {fileID: 2080662372}
@@ -3027,7 +3039,7 @@ RectTransform:
   m_Children:
   - {fileID: 122081883}
   m_Father: {fileID: 1878016680}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3403,8 +3415,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824ab38b76ca36b40b2bb302ef38c1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1Name: {fileID: 0}
+  player2Name: {fileID: 0}
+  player1HPUI: {fileID: 419009348}
   player2HPUI: {fileID: 1227205328}
+  sp1: {fileID: 0}
+  sp2: {fileID: 0}
+  player1HP: 100
   player2HP: 100
+  p1LowK: {fileID: 0}
+  p1HighK: {fileID: 0}
+  p1LowP: {fileID: 0}
+  p1HighP: {fileID: 0}
+  p1Sp: {fileID: 0}
+  p2LowK: {fileID: 0}
+  p2HighK: {fileID: 0}
+  p2LowP: {fileID: 0}
+  p2HighP: {fileID: 0}
+  p2Sp: {fileID: 0}
 --- !u!224 &2125262856
 RectTransform:
   m_ObjectHideFlags: 0
