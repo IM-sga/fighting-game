@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour {
+    
     public GameObject player2HPUI;
 
     public int player2HP = 100;
