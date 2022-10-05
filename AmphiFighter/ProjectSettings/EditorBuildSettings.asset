@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GameSettings.unity
+    guid: f472e742c62159b4b89266def7954da3
+  - enabled: 1
+    path: Assets/Scenes/AmphiFighter.unity
+    guid: 3b6a39cf43dcc0343a63e317b9bbdcd8
   m_configObjects: {}
