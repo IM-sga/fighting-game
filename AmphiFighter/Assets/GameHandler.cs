@@ -276,7 +276,7 @@ public class GameHandler : MonoBehaviour {
                         attackSr.gameObject.GetComponent<VideoPlayer>().clip = p2Sp;
                         attackSr.gameObject.GetComponent<VideoPlayer>().Play();
                         rawAttack.SetActive(true);
-                        yield return new WaitForSeconds(5);
+                        yield return new WaitForSeconds(7);
                         dealDamage(2,player1HP,25);
                         break;
                 }
@@ -333,14 +333,14 @@ public class GameHandler : MonoBehaviour {
         if (player1HP <= 0)
         {
             variableHandler.vPasser.winner = 2;
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(1);
             SceneManager.LoadScene(3);
         }
 
         if (player2HP <= 0)
         {
             variableHandler.vPasser.winner = 1;
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(1);
             SceneManager.LoadScene(3);
         }
 

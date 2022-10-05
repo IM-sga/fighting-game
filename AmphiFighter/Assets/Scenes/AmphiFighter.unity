@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 234941503}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P2HighPunch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &234941503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,7 +395,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 330420646}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P1HighPunch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &330420646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,8 +506,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Health
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 647efe3a7d8907641963aae7bf71987d, type: 2}
+  m_sharedMaterial: {fileID: -9159415631640328254, guid: 647efe3a7d8907641963aae7bf71987d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -543,7 +567,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -22.068764, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.57357025, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -639,7 +663,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 430083747}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P1HighKick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &430083747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,8 +858,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 647efe3a7d8907641963aae7bf71987d, type: 2}
+  m_sharedMaterial: {fileID: -9159415631640328254, guid: 647efe3a7d8907641963aae7bf71987d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -979,7 +1015,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 764854304}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P2HighKick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &764854304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1212,8 +1260,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 647efe3a7d8907641963aae7bf71987d, type: 2}
+  m_sharedMaterial: {fileID: -9159415631640328254, guid: 647efe3a7d8907641963aae7bf71987d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1347,8 +1395,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Health
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 647efe3a7d8907641963aae7bf71987d, type: 2}
+  m_sharedMaterial: {fileID: -9159415631640328254, guid: 647efe3a7d8907641963aae7bf71987d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1408,7 +1456,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -22.068764, w: 0}
+  m_margin: {x: 0, y: 0, z: 2.460411, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1639,7 +1687,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: 9e42378b1c5bee54f81169eff9f52626, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 6113d7a9b545c5e49bb0a4622646fb89, type: 3}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: 6113d7a9b545c5e49bb0a4622646fb89, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1650,7 +1698,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1513391428}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P1Special
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1513391428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1760,7 +1820,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: 9e42378b1c5bee54f81169eff9f52626, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 6113d7a9b545c5e49bb0a4622646fb89, type: 3}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: 6113d7a9b545c5e49bb0a4622646fb89, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1771,7 +1831,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1664212372}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P2Special
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1664212372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2409,7 +2481,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2032550273}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P1LowKick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2032550273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2530,7 +2614,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2080662374}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125262855}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: P2LowKick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2080662374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,34 +2834,34 @@ MonoBehaviour:
   player2Name: {fileID: 1182485030}
   player1HPUI: {fileID: 419009350}
   player2HPUI: {fileID: 1227205330}
-  sp1: {fileID: 0}
-  sp2: {fileID: 0}
+  sp1: {fileID: 1513391427}
+  sp2: {fileID: 1664212371}
   player1HP: 100
   player2HP: 100
   idleAnimSr: {fileID: 1996749582}
   attackSr: {fileID: 940280093}
   rawAttack: {fileID: 1382466645}
   idle: {fileID: 32900000, guid: 5e539344ac6a65245ac683166dcc9b86, type: 3}
-  p1LowK: {fileID: 32900000, guid: 7273ec9b3b70f504eb9868dc9cc2856e, type: 3}
+  p1LowK: {fileID: 32900000, guid: af4da5e53bbb36b4f862d7e55e9b25d2, type: 3}
   p1HighK: {fileID: 32900000, guid: e331db51bcf748c44ab5280c382347a0, type: 3}
-  p1LowP: {fileID: 32900000, guid: af4da5e53bbb36b4f862d7e55e9b25d2, type: 3}
+  p1LowP: {fileID: 32900000, guid: 7273ec9b3b70f504eb9868dc9cc2856e, type: 3}
   p1HighP: {fileID: 32900000, guid: 731c49bcb5569664a8fde8d465ef896b, type: 3}
   p1Sp: {fileID: 32900000, guid: 866d659063460304f9ebd904363f38d2, type: 3}
   p2LowK: {fileID: 32900000, guid: 9221d00083164764f8e596e795766116, type: 3}
   p2HighK: {fileID: 32900000, guid: 0c22f54253db926498af00a6de08a91b, type: 3}
   p2LowP: {fileID: 32900000, guid: 0d9feab968e8df94bb21201314178aee, type: 3}
   p2HighP: {fileID: 32900000, guid: e06f3ec7605ffc741aac12c3d251b144, type: 3}
-  p2Sp: {fileID: 32900000, guid: ff1961660a7eba54d9fdfd337cd7845b, type: 3}
-  mp1LowK: {fileID: 0}
-  mp1HighK: {fileID: 0}
-  mp1LowP: {fileID: 0}
-  mp1HighP: {fileID: 0}
-  mp1Sp: {fileID: 0}
-  mp2LowK: {fileID: 0}
-  mp2HighK: {fileID: 0}
-  mp2LowP: {fileID: 0}
-  mp2HighP: {fileID: 0}
-  mp2Sp: {fileID: 0}
+  p2Sp: {fileID: 32900000, guid: bc45c3f9c37bb0d4b88f7816e2032629, type: 3}
+  mp1LowK: {fileID: 32900000, guid: 7840ab4f8adf52e44aa8cb0fb7119c8b, type: 3}
+  mp1HighK: {fileID: 32900000, guid: 7840ab4f8adf52e44aa8cb0fb7119c8b, type: 3}
+  mp1LowP: {fileID: 32900000, guid: f6f5c74732abe8a4babfc64ac01675d9, type: 3}
+  mp1HighP: {fileID: 32900000, guid: f6f5c74732abe8a4babfc64ac01675d9, type: 3}
+  mp1Sp: {fileID: 32900000, guid: c3ad03adab4f008488fb0c6abf1fda2a, type: 3}
+  mp2LowK: {fileID: 32900000, guid: 9cda9616db6e2d543ad7044c65d71cce, type: 3}
+  mp2HighK: {fileID: 32900000, guid: 9cda9616db6e2d543ad7044c65d71cce, type: 3}
+  mp2LowP: {fileID: 32900000, guid: e96af4b251ffc6446b34afce6e23c3d8, type: 3}
+  mp2HighP: {fileID: 32900000, guid: e96af4b251ffc6446b34afce6e23c3d8, type: 3}
+  mp2Sp: {fileID: 32900000, guid: a8c4d40d7e688ec4dbbafdb4e56f8e86, type: 3}
 --- !u!224 &2125262856
 RectTransform:
   m_ObjectHideFlags: 0
