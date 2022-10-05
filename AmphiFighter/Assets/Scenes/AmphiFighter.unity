@@ -3700,11 +3700,11 @@ MonoBehaviour:
   p1LowP: {fileID: 32900000, guid: af4da5e53bbb36b4f862d7e55e9b25d2, type: 3}
   p1HighP: {fileID: 32900000, guid: 731c49bcb5569664a8fde8d465ef896b, type: 3}
   p1Sp: {fileID: 32900000, guid: 866d659063460304f9ebd904363f38d2, type: 3}
-  p2LowK: {fileID: 0}
-  p2HighK: {fileID: 0}
-  p2LowP: {fileID: 0}
-  p2HighP: {fileID: 0}
-  p2Sp: {fileID: 0}
+  p2LowK: {fileID: 32900000, guid: 9221d00083164764f8e596e795766116, type: 3}
+  p2HighK: {fileID: 32900000, guid: 0c22f54253db926498af00a6de08a91b, type: 3}
+  p2LowP: {fileID: 32900000, guid: 0d9feab968e8df94bb21201314178aee, type: 3}
+  p2HighP: {fileID: 32900000, guid: e06f3ec7605ffc741aac12c3d251b144, type: 3}
+  p2Sp: {fileID: 32900000, guid: ff1961660a7eba54d9fdfd337cd7845b, type: 3}
 --- !u!224 &2125262856
 RectTransform:
   m_ObjectHideFlags: 0
