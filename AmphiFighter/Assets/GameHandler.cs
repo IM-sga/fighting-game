@@ -17,8 +17,8 @@ public class GameHandler : MonoBehaviour {
     public Button sp1;
     public Button sp2;
 
-    public int player1HP;
-    public int player2HP;
+    public int player1HP = 100;
+    public int player2HP = 100;
 
     public VideoClip p1LowK;
     public VideoClip p1HighK;
@@ -32,13 +32,6 @@ public class GameHandler : MonoBehaviour {
     public VideoClip p2HighP;
     public VideoClip p2Sp;
 
-    void Awake()
-    {
-        player1Name.text = variableHandler.vPasser.playerName1;
-        player2Name.text = variableHandler.vPasser.playerName2;
-        player1HP = variableHandler.vPasser.playerHealth;
-        player2HP = variableHandler.vPasser.playerHealth;
-    }
     // Start is called before the first frame update
     void Start(){
         
@@ -46,9 +39,8 @@ public class GameHandler : MonoBehaviour {
     }
     // Update is called once per frame
     void Update() {
-        player1HPUI.text = player1HPUI + "";
-        player2HPUI.text = player2HPUI + "";
-        StartCoroutine(healthChecker());
+        player1HPUI.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = player1HP +"";
+        player2HPUI.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = player2HP +"";
         
     }
     public void dealDamage(int playerNum, int playerHP, int damage)
@@ -169,21 +161,10 @@ public class GameHandler : MonoBehaviour {
         }
     }
 
-    IEnumerator healthChecker()
-    {
-        if (playerOneHP <= 0)
-        {
-            variableHandler.vPasser.winner = 2;
-            yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(2);
-        }
-
-        if (playerTwoHP <= 0)
-        {
-            variableHandler.vPasser.winner = 1;
-            yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(2);
-        }
-
+    IEnumerator delayPress(){
+        yield return new WaitForSeconds(5f);
+        // Debug.Log ("Start");
+        SceneManager.LoadScene(1);
+        
     }
 }
