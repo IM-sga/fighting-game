@@ -32,6 +32,13 @@ public class GameHandler : MonoBehaviour {
     public VideoClip p2HighP;
     public VideoClip p2Sp;
 
+    void Awake()
+    {
+        player1Name.text = variableHandler.vPasser.playerName1;
+        player2Name.text = variableHandler.vPasser.playerName2;
+        player1HP = variableHandler.vPasser.playerHealth;
+        player2HP = variableHandler.vPasser.playerHealth;
+    }
     // Start is called before the first frame update
     void Start(){
         
