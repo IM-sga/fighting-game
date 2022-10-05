@@ -11,14 +11,14 @@ public class GameHandler : MonoBehaviour {
     
     public TextMeshProUGUI player1Name;
     public TextMeshProUGUI player2Name;
-    public GameObject player1HPUI;
-    public GameObject player2HPUI;
+    public TextMeshProUGUI player1HPUI;
+    public TextMeshProUGUI player2HPUI;
 
     public Button sp1;
     public Button sp2;
 
-    public int player1HP = 100;
-    public int player2HP = 100;
+    public int player1HP;
+    public int player2HP;
 
     public VideoClip p1LowK;
     public VideoClip p1HighK;
@@ -46,8 +46,9 @@ public class GameHandler : MonoBehaviour {
     }
     // Update is called once per frame
     void Update() {
-        player1HPUI.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = player1HP +"";
-        player2HPUI.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = player2HP +"";
+        player1HPUI.text = player1HP + "";
+        player2HPUI.text = player2HP + "";
+        StartCoroutine(healthChecker());
         
     }
     public void dealDamage(int playerNum, int playerHP, int damage)
@@ -98,9 +99,6 @@ public class GameHandler : MonoBehaviour {
     public void P2Special(){
         StartCoroutine(delayProcess(2,100,4));
         
-    }
-    public void Delay(){
-        StartCoroutine(delayPress());
     }
 
     public IEnumerator delayProcess(int playerNumber, int accuracy,int attackNumber){
@@ -168,10 +166,21 @@ public class GameHandler : MonoBehaviour {
         }
     }
 
-    IEnumerator delayPress(){
-        yield return new WaitForSeconds(5f);
-        // Debug.Log ("Start");
-        SceneManager.LoadScene(1);
-        
+    IEnumerator healthChecker()
+    {
+        if (player1HP <= 0)
+        {
+            variableHandler.vPasser.winner = 2;
+            yield return new WaitForSeconds(3);
+            SceneManager.LoadScene(2);
+        }
+
+        if (player2HP <= 0)
+        {
+            variableHandler.vPasser.winner = 1;
+            yield return new WaitForSeconds(3);
+            SceneManager.LoadScene(2);
+        }
+
     }
 }

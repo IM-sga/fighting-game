@@ -3689,8 +3689,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1Name: {fileID: 720033563}
   player2Name: {fileID: 1182485030}
-  player1HPUI: {fileID: 419009348}
-  player2HPUI: {fileID: 1227205328}
+  player1HPUI: {fileID: 419009350}
+  player2HPUI: {fileID: 1227205330}
   sp1: {fileID: 0}
   sp2: {fileID: 0}
   player1HP: 100
