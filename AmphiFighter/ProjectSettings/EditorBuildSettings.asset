@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AmphiFighter.unity
     guid: 3b6a39cf43dcc0343a63e317b9bbdcd8
+  - enabled: 1
+    path: Assets/Scenes/Winner.unity
+    guid: 3bcb771f681e2bc47a5be9cfb2fc8364
   m_configObjects: {}

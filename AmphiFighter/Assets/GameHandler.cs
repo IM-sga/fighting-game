@@ -67,7 +67,6 @@ public class GameHandler : MonoBehaviour {
         player1HPUI.text = player1HP + "";
         player2HPUI.text = player2HP + "";
         StartCoroutine(healthChecker());
-        
     }
     public void dealDamage(int playerNum, int playerHP, int damage)
     {
@@ -75,12 +74,14 @@ public class GameHandler : MonoBehaviour {
             {
                 playerHP -= damage;
                 player2HP = playerHP;
+                rawAttack.SetActive(false);
             }
 
         else
             {
                 playerHP -= damage;
                 player1HP = playerHP;
+                rawAttack.SetActive(false);
             }
     }
     // PLAYER 1 ATK
@@ -333,14 +334,14 @@ public class GameHandler : MonoBehaviour {
         {
             variableHandler.vPasser.winner = 2;
             yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
         if (player2HP <= 0)
         {
             variableHandler.vPasser.winner = 1;
             yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
     }
