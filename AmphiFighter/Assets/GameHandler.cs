@@ -11,8 +11,8 @@ public class GameHandler : MonoBehaviour {
     
     public TextMeshProUGUI player1Name;
     public TextMeshProUGUI player2Name;
-    public GameObject player1HPUI;
-    public GameObject player2HPUI;
+    public TextMeshProUGUI player1HPUI;
+    public TextMeshProUGUI player2HPUI;
 
     public Button sp1;
     public Button sp2;
@@ -34,10 +34,10 @@ public class GameHandler : MonoBehaviour {
 
     void Awake()
     {
-        player1Name.text = variableHandler.vPasser.playerName1;
-        player2Name.text = variableHandler.vPasser.playerName2;
-        player1HP = variableHandler.vPasser.playerHealth;
-        player2HP = variableHandler.vPasser.playerHealth;
+        player1Name.text = VariableHandler.vPasser.playerName1;
+        player2Name.text = VariableHandler.vPasser.playerName2;
+        player1HP = VariableHandler.vPasser.playerHealth;
+        player2HP = VariableHandler.vPasser.playerHealth;
     }
     // Start is called before the first frame update
     void Start(){
@@ -46,24 +46,23 @@ public class GameHandler : MonoBehaviour {
     }
     // Update is called once per frame
     void Update() {
-        player1HPUI.text = player1HPUI + "";
-        player2HPUI.text = player2HPUI + "";
+        player1HPUI.text = player1HP.ToString();
+        player2HPUI.text = player2HP.ToString();
         StartCoroutine(healthChecker());
         
     }
     public void dealDamage(int playerNum, int playerHP, int damage)
     {
         if (playerNum == 1)
-            {
-                playerHP -= damage;
-                player2HP = playerHP;
-            }
-
+        {
+            playerHP -= damage;
+            player1HP = playerHP;
+        }
         else
-            {
-                playerHP -= damage;
-                player1HP = playerHP;
-            }
+        {
+            playerHP -= damage;
+            player2HP = playerHP;
+        }
     }
     // PLAYER 1 ATK
     public void P1LowPunch (){
@@ -87,7 +86,7 @@ public class GameHandler : MonoBehaviour {
         StartCoroutine(delayProcess(2,100,1));
     }
     public void P2HighPunch(){
-        dealDamage (10, 30, player1HP);
+        dealDamage(2, player2HP, 10);
     }
     public void P2LowKick (){
         StartCoroutine(delayProcess(2,100,2));
@@ -101,7 +100,7 @@ public class GameHandler : MonoBehaviour {
         
     }
     public void Delay(){
-        StartCoroutine(delayPress());
+        StartCoroutine(delayProcess());
     }
 
     public IEnumerator delayProcess(int playerNumber, int accuracy,int attackNumber){
@@ -171,19 +170,18 @@ public class GameHandler : MonoBehaviour {
 
     IEnumerator healthChecker()
     {
-        if (playerOneHP <= 0)
+        if (player1HP <= 0)
         {
-            variableHandler.vPasser.winner = 2;
+            VariableHandler.vPasser.winner = 2;
             yield return new WaitForSeconds(3);
             SceneManager.LoadScene(2);
         }
 
-        if (playerTwoHP <= 0)
+        if (player2HP <= 0)
         {
-            variableHandler.vPasser.winner = 1;
+            VariableHandler.vPasser.winner = 1;
             yield return new WaitForSeconds(3);
             SceneManager.LoadScene(2);
         }
-
     }
 }

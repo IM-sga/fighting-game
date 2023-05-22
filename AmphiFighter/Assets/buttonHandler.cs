@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System;
 
-public class buttonHandler : MonoBehaviour
+public class ButtonHandler : MonoBehaviour
 {   
     public TMP_InputField p1Name;
     public TMP_InputField p2Name;
@@ -24,9 +24,9 @@ public class buttonHandler : MonoBehaviour
 
     public void setVariables()
     {
-        variableHandler.vPasser.playerName1 = p1Name.text;
-        variableHandler.vPasser.playerName2 = p2Name.text;
-        variableHandler.vPasser.playerHealth = System.Convert.ToInt32(pHealth.text);
+        VariableHandler.vPasser.playerName1 = p1Name.text;
+        VariableHandler.vPasser.playerName2 = p2Name.text;
+        VariableHandler.vPasser.playerHealth = System.Convert.ToInt32(pHealth.text);
         SceneManager.LoadScene(2);
     }
 }

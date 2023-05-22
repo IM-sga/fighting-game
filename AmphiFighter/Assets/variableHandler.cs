@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class variableHandler : MonoBehaviour
+public class VariableHandler : MonoBehaviour
 {   
-    public static variableHandler vPasser;
+    public static VariableHandler vPasser;
     public string playerName1;
     public string playerName2;
     public int playerHealth;
